@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callista Budihardjo</title>
+    <link rel="stylesheet" href="more.css">
+</head>
+<body>
+    <header>
+        <div class="FName">
+            <h1>Callista Budihardjo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contacts" onclick="showSection('contacts')">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="short">
+                <p>     Diving into the dynamic world of Computer Science, I am Callista, an extroverted student from Indonesia.
+                    My passion for technology extends beyond <a  href="javascript:void(0)" onclick="openModal('codeModal')" class="code-link">binary and algorithms</a>, intertwining with human curiosity and
+                    a keen interest in building connections. This synergy is reflected in my involvement with St Malachy’s Youth Centre,
+                    where I <a  href="javascript:void(0)" onclick="openModal('volunteerModal')"class="volunteer-link">volunteer</a>, in my work as a sales assistant at Deichmann, and my participation in various societies.
+                    Alongside my studies, I aim to enhance my skills and confidence in a professional setting through
+                    <a  href="javascript:void(0)" onclick="openModal('part-timeModal')"class="parttime-link">part-time work.</a></p>
+                    
+                    <p> I have developed proficiency in C, C++, Python, SQL, CSS, HTML, and JavaScript. My fascination
+                        with technology drives me to explore and contribute to innovative solutions. My passion for problem-solving and
+                        continuous development in the tech field, combined with my commitment to perpetual learning, positions me to make impactful contributions in the realm of computer science.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contacts" id="contacts">
+            <h3>CONTACTS</h3>
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" onclick="toggleEmailPopup(event)"><img src="images/emailicon.png" alt="Email"></a>
+                        <div class="email-popup" id="emailPopup">cbudihardjo01@qub.ac.uk</div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" onclick="togglePhonePopup(event)"><img src="images/callicon.png" alt="Call +44 7387612745"></a>
+                        <div class="call-popup" id="callPopup">+44 7387612745</div>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/callista-budihardjo/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <p>&copy; 2024 Callista Budihardjo. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal structure -->
+     <div id="volunteerModal" class="modal">
+        <span class="close" onclick="closeModal('volunteerModal')">&times;</span>
+        <img class="modal-content" id="volunteerImg" src="images/5b76fcd1-3d90-4588-afd1-22de8ff5e3b9 copy.png" alt="Volunteering">
+    </div>
+
+    <div id="codeModal" class="modal">
+        <span class="close" onclick="closeModal('codeModal')">&times;</span>
+        <img class="modal-content" id="codeImg" src="images/IMG_6230.png" alt="Code">
+    </div>
+
+    <div id="part-timeModal" class="modal">
+        <span class="close" onclick="closeModal('part-timeModal')">&times;</span>
+        <img class="modal-content" id="parttimeImg" src="images/IMG_6231.png" alt="part-time">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
